@@ -1,12 +1,12 @@
-/* Import Josefin Sans instead of other fonts */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+/* Import Playfair Display instead of Josefin Sans */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-josefin: "Josefin Sans", sans-serif;
+  --font-playfair: "Playfair Display", serif;
 }
 
 * {
@@ -16,10 +16,11 @@
 @layer base {
   html, body {
     @apply font-sans text-n-8 text-base;
-    font-family: var(--font-josefin), sans-serif;
+    font-family: var(--font-playfair), serif;
     background-color: white;
   }
 }
+
 /* Custom rotation classes */
 .rotate-45    { @apply rotate-[45deg]; }
 .rotate-90    { @apply rotate-[90deg]; }
