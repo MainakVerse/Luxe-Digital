@@ -54,14 +54,14 @@ const Navbar = (props: Props) => {
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       )}
     >
-      <div className={cn(`flex items-center px-5 max-lg:py-4 lg:px-7.5 xl:px-10`)}>
-        <Link href="/#hero" className={cn(`block w-48 xl:mr-8`)}>
+      <div className={cn(`flex items-center justify-between px-5 max-lg:py-4 lg:px-7.5 xl:px-10`)}>
+        <Link href="/#hero" className={cn(`block w-48`)}>
           <Image src={brainwave} alt="luxe" width={190} height={40} />
         </Link>
 
         <nav
           className={cn(
-            `fixed inset-x-0 bottom-0 top-20 hidden bg-n-8 lg:static lg:mx-auto lg:flex lg:bg-transparent`,
+            `fixed inset-x-0 bottom-0 top-20 hidden bg-n-8 lg:static lg:flex lg:bg-transparent`,
             openNavigation ? "flex" : "hidden"
           )}
         >
@@ -76,11 +76,11 @@ const Navbar = (props: Props) => {
                 href={item.url}
                 onClick={handleClick}
                 className={cn(
-                  `block relative font-code text-md uppercase text-n-1 transition-colors hover:text-color-1`,
-                  "px-6 py-6 md:py-8 lg:-mr-0.25 lg:text- lg:font-semibold",
+                  `block relative font-code text-sm uppercase text-n-1 transition-colors hover:text-color-1`,
+                  "px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-semibold",
                   
                   item.url === hash ? "z-2 lg:text-n-1" : "lg:text-n-1/50",
-                  "lg:leading-5 lg:hover:text-n-1 xl:px-12"
+                  "lg:leading-5 lg:hover:text-n-1 lg:px-4 xl:px-6"
                 )}
               >
                 {item.title}
@@ -89,8 +89,6 @@ const Navbar = (props: Props) => {
           </div>
           <HamburgerMenu />
         </nav>
-
-        
 
         <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
           <MenuSvg openNavigation={openNavigation} />

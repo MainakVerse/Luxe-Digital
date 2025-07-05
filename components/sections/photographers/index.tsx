@@ -47,7 +47,7 @@ type Props = {};
 
 const Photographers = (props: Props) => {
   return (
-    <Section id="photographers" className="bg-black">
+    <Section id="photographers" className="bg-white">
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl text-center mx-auto mb-16"

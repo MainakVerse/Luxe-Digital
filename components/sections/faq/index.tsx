@@ -9,7 +9,7 @@ const CallToAction = (props: Props) => {
     <Section id="cta" className="py-20">
       <div className="container relative z-2">
         {/* Main CTA Container */}
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-black via-gray-900 to-black border border-yellow-500/30 hover:border-yellow-400/60 transition-all duration-700 group">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-purple-800 via-gray-900 to-black border border-yellow-500/30 hover:border-yellow-400/60 transition-all duration-700 group">
           
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-5">
