@@ -10,14 +10,7 @@ export const Rings = () => {
   );
 };
 
-export const SideLines = () => {
-  return (
-    <>
-      <div className="absolute left-5 top-0 h-full w-0.25 bg-n-6"></div>
-      <div className="absolute right-5 top-0 h-full w-0.25 bg-n-6"></div>
-    </>
-  );
-};
+
 
 export const BackgroundCircles = () => {
   return (
@@ -44,7 +37,7 @@ export const HamburgerMenu = () => {
 
       <Rings />
 
-      <SideLines />
+    
 
       <BackgroundCircles />
     </div>

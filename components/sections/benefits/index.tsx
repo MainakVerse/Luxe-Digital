@@ -4,7 +4,7 @@ import Heading from "../../atoms/heading";
 import { benefits } from "@/constants";
 import Image from "next/image";
 import Arrow from "@/components/svg/arrow";
-// import { GradientLight } from "@/components/design/benefits";
+
 import ClipPath from "@/components/svg/clip-path";
 
 type Props = {};

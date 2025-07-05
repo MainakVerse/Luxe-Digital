@@ -26,12 +26,12 @@ const Section = ({ className, id, crosses, crossesOffset, customPaddings, childr
 
       <div
         className={cn(
-          "pointer-events-none absolute left-5 top-0 hidden h-full w-0.25 bg-stroke-1 md:block lg:left-7.5 xl:left-10"
+          "pointer-events-none absolute left-5 top-0 hidden h-full w-0.25  md:block lg:left-7.5 xl:left-10"
         )}
       />
       <div
         className={cn(
-          "pointer-events-none absolute right-5 top-0 hidden h-full w-0.25 bg-stroke-1 md:block lg:right-7.5 xl:right-10"
+          "pointer-events-none absolute right-5 top-0 hidden h-full w-0.25  md:block lg:right-7.5 xl:right-10"
         )}
       />
 
